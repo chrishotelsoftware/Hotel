@@ -1,0 +1,54 @@
+.Aboutuspg_intro{
+    background-image: url("/images/img3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+height: 100vh;
+text-align: center;
+color: white;
+margin-top: -15px;
+
+}
+.tx{
+    animation: eff 2s ;
+
+}
+@keyframes eff {
+    from {
+        margin-left: -100%;
+        transform:rotate(-90deg);
+      }
+      to {
+        left:15vw
+      }
+   
+  
+    
+}
+.apg_t1{
+    padding-top: 30vh;
+    font-size: 1vw;
+    font-weight: 600;
+}
+.apg_t2{
+    font-size: 6vw;
+    font-weight: 700;
+   
+}
+.tx button{
+    padding: 1vw;
+    background-color:transparent;
+}
+#im1 {
+    margin-left: 45%;
+}
+#im2{
+    margin-left: 15%;
+}
+.abt_t p{
+    font-size: 2vw;
+    text-align: center;
+    padding: 3vw;
+}
+.abt_t{
+  align-items: center;
+}

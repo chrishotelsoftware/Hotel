@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Rooms from './components/pages/Rooms';
 import Aboutus from './components/pages/Aboutus';
 import Contactus from './components/pages/Contactus';
+import Test from './components/pages/Test';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/Rooms' component={Rooms} />
           <Route path='/Aboutus' component={Aboutus} />
+          <Route path='/Test' component={Test}/>
           <Route path='/Contactus' component={Contactus} />
         </Switch>
       </Router>

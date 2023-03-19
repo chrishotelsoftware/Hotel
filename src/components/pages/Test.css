@@ -1,0 +1,110 @@
+.Testpg_intro{
+    background-image: url("/images/img2.png");
+background-repeat: no-repeat; 
+ background-size: cover;
+    height: 100vh;
+margin-top:0px ;
+text-align: center;
+
+}
+.all{
+    background-image: url("https://images.pexels.com/photos/1099816/pexels-photo-1099816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: 0vh;
+}
+
+.feedback{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(145, 145, 238) ;
+}
+.fed{
+  background-color:white;
+  margin: 20px;
+  flex: 100%;
+  padding:10px;
+  animation: eff 2s ;
+}
+
+.txtt{
+    animation: eff 2s ;
+    color:white;
+    padding-top: 15vh;
+
+}
+@keyframes eff {
+    from {
+        margin-left: -100%;
+        transform:rotate(-90deg);
+      }
+      to {
+        left:15vw
+      }
+   
+  
+    
+  }
+  .ti_1{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3vw;
+
+  }
+  .ti_2{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5vw;
+
+  }.ti_3{
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2vw;
+
+  }
+  .Test_content{
+    margin-top: 0vh;
+    width: 30vw;
+    height: 30vh;
+   margin-left: 10vw;
+  }
+  .t_t1{
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .t_t2{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .t_t3{
+    font-size: 20px;
+    color: rgb(145, 145, 238);
+    font-weight: 500;
+    font-style: italic;
+
+
+  }
+  .t_m{
+    color: gray;
+    font-style: italic;
+  }
+.t_name{
+    color: black;
+    font-size: 30px;
+  }
+  #bg-text2
+{
+    color:lightgrey;
+    font-size:120px;
+    font-weight: 700;
+    text-align: center;
+  
+}
+@media (max-width: 800px) {
+  .feedback{
+    flex-direction: column;
+  
+}}

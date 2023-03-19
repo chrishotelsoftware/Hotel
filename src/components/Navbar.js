@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -9,6 +11,7 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -51,6 +54,15 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
+                to='/Test'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Testimonials
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
                 to='/Aboutus'
                 className='nav-links'
                 onClick={closeMobileMenu}
@@ -66,6 +78,25 @@ function Navbar() {
               >
                 Contact Us
               </Link>
+            </li>
+            <li> {isAuthenticated && (
+            <li>
+              <p> {user.name} </p>
+            </li>
+          )}</li>
+            <li>
+            {isAuthenticated ? (
+            <li>
+              <button
+                onClick={() => logout({ returnTo: window.location.origin })}>
+                Log Out
+              </button>
+            </li>
+          ) : (
+            <li>
+              <button onClick={() => loginWithRedirect()}>Log In</button>
+            </li>
+          )}
             </li>
 
           

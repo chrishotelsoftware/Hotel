@@ -1,10 +1,16 @@
 .cards {
   padding: 4rem;
-  background: #fff;
+  background: whitesmoke;
 }
 
-h1 {
-  text-align: center;
+.cards h1 {
+  font-size: 5vw;
+ 
+}
+.cards button{
+  padding: 1vw;
+  background-color: transparent;
+  align-items: flex-end;
 }
 
 .cards__container {
@@ -30,6 +36,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  width: 20vw;
 }
 
 .cards__item__link {

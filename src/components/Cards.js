@@ -5,7 +5,9 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Feautred Rooms !</h1>
+      <h1>-Our Rooms and Suites</h1>
+      <button> Explore Rooms</button>
+
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -20,6 +22,12 @@ function Cards() {
               text=' Feautred Room: Family Deluxe      '
               label='Rs 2500 /Night'
               path='/products'
+            />
+            <CardItem
+              src='images/img5.png'
+              text='Feautred Room: Presidential'
+              label='Rs 4000 /Night'
+              path='/sign-up'
             />
             <CardItem
               src='images/img5.png'
